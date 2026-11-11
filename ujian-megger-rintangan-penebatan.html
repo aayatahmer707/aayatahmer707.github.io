@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ujian Megger: Rintangan Penebatan Motor</title>
+<meta name="description" content="Prosedur ujian megger bagi motor: voltan ujian, sambungan, nilai minimum 5 MΩ mengikut IEEE 43, pembetulan suhu, indeks polarisasi dan tafsiran bacaan.">
+<meta name="keywords" content="ujian megger motor, rintangan penebatan, insulation resistance test, IEEE 43, megaohm motor, indeks polarisasi">
+<meta name="author" content="Ahmer Tech">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://ahmer.tech/ujian-megger-rintangan-penebatan.html">
+<meta name="theme-color" content="#0f766e">
+<meta property="og:locale" content="ms_MY">
+<meta property="og:site_name" content="Ahmer Tech">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ujian Megger: Rintangan Penebatan Motor">
+<meta property="og:description" content="Prosedur ujian megger bagi motor: voltan ujian, sambungan, nilai minimum 5 MΩ mengikut IEEE 43, pembetulan suhu, indeks polarisasi dan tafsiran bacaan.">
+<meta property="og:url" content="https://ahmer.tech/ujian-megger-rintangan-penebatan.html">
+<meta property="og:image" content="https://ahmer.tech/kongsi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kalkulator Lilitan Semula Motor">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="ikon.png">
+<link rel="stylesheet" href="gaya.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Ujian Megger: Cara Mengukur Rintangan Penebatan Motor","description":"Prosedur ujian megger bagi motor: voltan ujian, sambungan, nilai minimum 5 MΩ mengikut IEEE 43, pembetulan suhu, indeks polarisasi dan tafsiran bacaan.","inLanguage":"ms","image":["https://ahmer.tech/rajah-ujian-megger.svg","https://ahmer.tech/kongsi.png"],"datePublished":"2026-11-11","dateModified":"2026-11-11","author":{"@type":"Organization","name":"Ahmer Tech","url":"https://ahmer.tech/"},"publisher":{"@type":"Organization","name":"Ahmer Tech","url":"https://ahmer.tech/","logo":{"@type":"ImageObject","url":"https://ahmer.tech/ikon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ahmer.tech/ujian-megger-rintangan-penebatan.html"},"articleSection":"Ujian dan diagnosis","keywords":"ujian megger motor, rintangan penebatan, insulation resistance test, IEEE 43, megaohm motor, indeks polarisasi"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Laman Utama","item":"https://ahmer.tech/"},{"@type":"ListItem","position":2,"name":"Ujian Megger: Cara Mengukur Rintangan Penebatan Motor","item":"https://ahmer.tech/ujian-megger-rintangan-penebatan.html"}]}</script>
+<script src="laman.js" defer></script>
+<script src="iklan.js" defer></script>
+</head>
+<body>
+<a class="langkau" href="#utama">Langkau ke kandungan</a>
+<header class="kepala">
+<div class="bekas kepala-dalam">
+<a class="jenama" href="index.html"><img src="logo.svg" width="36" height="36" alt=""><span>Ahmer Tech</span></a>
+<button class="butang-menu" type="button" aria-controls="menu-utama" aria-expanded="false" aria-label="Buka menu"><span></span><span></span><span></span></button>
+<nav class="menu" id="menu-utama" aria-label="Menu utama">
+<ul>
+<li><a href="index.html">Laman Utama</a></li>
+<li><a href="index.html#kalkulator">Kalkulator</a></li>
+<li><a href="index.html#formula">Formula</a></li>
+<li><a href="index.html#artikel">Artikel</a></li>
+<li><a href="tentang.html">Tentang Kami</a></li>
+<li><a href="hubungi.html">Hubungi</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="utama">
+
+<article class="bekas rencana">
+<nav class="serbuk" aria-label="Laluan halaman">
+<ol>
+<li><a href="index.html">Laman Utama</a></li>
+<li><a href="index.html#kategori-ujian-dan-diagnosis">Ujian dan diagnosis</a></li>
+<li aria-current="page">Ujian Megger: Cara Mengukur Rintangan Penebatan Motor</li>
+</ol>
+</nav>
+<p class="cip">Ujian dan diagnosis</p>
+<h1>Ujian Megger: Cara Mengukur Rintangan Penebatan Motor</h1>
+<p class="meta">Dikemas kini <time datetime="2026-11-11">11 November 2026</time> · 3 minit bacaan</p>
+<div class="iklan" data-iklan="atas" hidden></div>
+<nav class="kandungan" aria-label="Isi kandungan">
+<h2>Isi kandungan</h2>
+<ol>
+<li><a href="#peralatan">Peralatan</a></li>
+<li><a href="#voltan-ujian">Voltan ujian</a></li>
+<li><a href="#prosedur">Prosedur</a></li>
+<li><a href="#nilai-minimum-yang-disyorkan">Nilai minimum yang disyorkan</a></li>
+<li><a href="#pembetulan-suhu">Pembetulan suhu</a></li>
+<li><a href="#indeks-polarisasi">Indeks polarisasi</a></li>
+<li><a href="#mentafsir-bacaan">Mentafsir bacaan</a></li>
+<li><a href="#rujukan">Rujukan dan bacaan lanjut</a></li>
+<li><a href="#artikel-berkaitan">Artikel berkaitan</a></li>
+</ol>
+</nav>
+<div class="isi">
+<p>Ujian rintangan penebatan, yang di bengkel dipanggil ujian megger, mengukur sejauh mana penebat menghalang arus bocor daripada belitan ke badan motor. Ia dijalankan sebelum motor lama dihidupkan semula, selepas lilitan semula dan sebagai penyelenggaraan berkala.</p>
+<figure class="rajah">
+<a href="rajah-ujian-megger.svg" title="Buka rajah pada saiz penuh"><img alt="Penguji penebatan 500 V disambung ke motor: plumbum LINE ke terminal belitan yang dipintas bersama dan plumbum EARTH ke badan motor" decoding="async" height="430" src="rajah-ujian-megger.svg" width="760"/></a>
+<figcaption>Sambungan untuk menguji keseluruhan belitan ke badan motor. Bekalan mesti diasingkan terlebih dahulu.</figcaption>
+</figure>
+<h2 id="peralatan">Peralatan</h2>
+<p>Penguji rintangan penebatan membekalkan voltan arus terus yang tinggi dan mengukur arus bocor yang sangat kecil. Bacaannya dalam megaohm (MΩ). Multimeter biasa tidak sesuai kerana voltan ujiannya terlalu rendah.</p>
+<h2 id="voltan-ujian">Voltan ujian</h2>
+<div class="tatal"><table class="jadual-data">
+<thead>
+<tr>
+<th scope="col">Voltan kadaran belitan</th>
+<th scope="col">Voltan ujian arus terus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Di bawah 1000 V</td>
+<td>500 V</td>
+</tr>
+<tr>
+<td>1000 hingga 2500 V</td>
+<td>500 hingga 1000 V</td>
+</tr>
+<tr>
+<td>2501 hingga 5000 V</td>
+<td>1000 hingga 2500 V</td>
+</tr>
+<tr>
+<td>5001 hingga 12 000 V</td>
+<td>2500 hingga 5000 V</td>
+</tr>
+<tr>
+<td>Melebihi 12 000 V</td>
+<td>5000 hingga 10 000 V</td>
+</tr>
+</tbody>
+</table></div>
+<p>Bagi motor voltan rendah 230 V dan 400 V, gunakan 500 V.</p>
+<h2 id="prosedur">Prosedur</h2>
+<ol>
+<li>Asingkan bekalan, kunci suis dan sahkan tiada voltan pada terminal.</li>
+<li>Tanggalkan kabel bekalan, kapasitor, pemacu elektronik dan penangkap pusuan daripada terminal motor.</li>
+<li>Nyahcas belitan ke bumi.</li>
+<li>Sambung plumbum bumi penguji ke badan motor pada logam yang bersih, dan plumbum talian ke terminal belitan. Untuk menguji keseluruhan belitan, pintas ketiga-tiga terminal bersama.</li>
+<li>Kenakan voltan ujian selama 60 saat dan catat bacaan pada saat ke-60.</li>
+<li>Catat suhu belitan.</li>
+<li>Nyahcas belitan ke bumi selama sekurang-kurangnya empat kali tempoh ujian sebelum menyentuh terminal.</li>
+<li>Jika enam hujung belitan boleh diasingkan, ulang bagi setiap fasa dengan dua fasa lain dibumikan. Ini menguji penebatan antara fasa.</li>
+</ol>
+<h2 id="nilai-minimum-yang-disyorkan">Nilai minimum yang disyorkan</h2>
+<div class="tatal"><table class="jadual-data">
+<thead>
+<tr>
+<th scope="col">Jenis belitan</th>
+<th scope="col">Rintangan minimum pada 40 °C</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Belitan dawai bulat (rawak), dan gegelung terbentuk di bawah 1 kV</td>
+<td>5 MΩ</td>
+</tr>
+<tr>
+<td>Kebanyakan belitan gegelung terbentuk arus ulang-alik yang dibina selepas kira-kira 1970</td>
+<td>100 MΩ</td>
+</tr>
+<tr>
+<td>Belitan yang dibina sebelum kira-kira 1970</td>
+<td>(kV + 1) MΩ</td>
+</tr>
+</tbody>
+</table></div>
+<p>Di sini kV ialah voltan kadaran dalam kilovolt. Belitan baharu yang kering biasanya memberi bacaan ratusan megaohm atau lebih, jadi 5 MΩ ialah had paling bawah, bukan sasaran.</p>
+<h2 id="pembetulan-suhu">Pembetulan suhu</h2>
+<p>Rintangan penebatan menurun dengan cepat apabila suhu naik. Petua kasar ialah separuh bagi setiap kenaikan 10 °C. Bandingkan bacaan hanya pada suhu yang sama, atau betulkan kepada 40 °C sebelum membandingkannya dengan jadual.</p>
+<h2 id="indeks-polarisasi">Indeks polarisasi</h2>
+<p class="formula">Indeks polarisasi = bacaan pada 10 minit ÷ bacaan pada 1 minit</p>
+<p>Nilai minimum yang disyorkan ialah 2.0 bagi kelas penebat B, F dan H, dan 1.5 bagi kelas A. Ujian ini lebih bermakna untuk belitan gegelung terbentuk pada mesin besar. Bagi belitan dawai bulat motor kecil, arus serapan mereput dalam beberapa saat, jadi indeks ini jarang memberi maklumat tambahan. Jika bacaan satu minit sudah melebihi 5000 MΩ, indeks polarisasi tidak lagi bermakna.</p>
+<h2 id="mentafsir-bacaan">Mentafsir bacaan</h2>
+<ul>
+<li><strong>Rendah pada semua fasa:</strong> lembapan atau kotoran. Bersihkan, keringkan dan uji semula.</li>
+<li><strong>Satu fasa sahaja rendah:</strong> kerosakan setempat pada fasa itu.</li>
+<li><strong>Sifar:</strong> belitan menyentuh teras.</li>
+<li><strong>Tinggi dan stabil:</strong> penebat ke bumi sihat.</li>
+</ul>
+<p>Ujian ini mempunyai had. Ia tidak mengesan litar pintas antara lilitan dalam fasa yang sama. Untuk itu, ukur keseimbangan rintangan fasa atau gunakan penguji pusuan, seperti dalam <a href="ujian-selepas-lilit-semula.html">ujian selepas lilit semula</a>.</p>
+</div>
+<aside class="ajakan">
+<p><strong>Kira belitan anda sekarang</strong>Masukkan ukuran teras dan data plat nama untuk mendapat lilitan, saiz dawai dan berat kuprum.</p>
+<a class="butang" href="index.html#kalkulator">Buka kalkulator</a>
+</aside>
+<div class="iklan" data-iklan="tengah" hidden></div>
+<section>
+<h2 id="rujukan">Rujukan dan bacaan lanjut</h2>
+<ul class="rujukan-senarai">
+<li><a href="https://standards.ieee.org/ieee/43/4812/" target="_blank" rel="noopener">IEEE 43: amalan disyorkan ujian rintangan penebatan</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Megohmmeter" target="_blank" rel="noopener">Megaohmmeter (Wikipedia)</a></li>
+<li><a href="https://ms.wikipedia.org/wiki/Rintangan_elektrik" target="_blank" rel="noopener">Rintangan elektrik (Wikipedia Bahasa Melayu)</a></li>
+</ul>
+</section>
+<section>
+<h2 id="artikel-berkaitan">Artikel berkaitan</h2>
+<div class="grid-kad">
+<article class="kad">
+<h3><a href="ujian-selepas-lilit-semula.html">Ujian Selepas Lilit Semula: Rintangan, Keseimbangan dan Arus Tanpa Beban</a></h3>
+<p>Motor yang baru dililit semula mesti lulus beberapa ujian sebelum diserahkan. Ikuti urutan daripada pemeriksaan visual hingga arus tanpa beban dan ketahui maksud setiap bacaan.</p>
+</article>
+<article class="kad">
+<h3><a href="kelas-penebat-motor.html">Kelas Penebat Motor A, E, B, F dan H Dijelaskan</a></h3>
+<p>Kelas penebat pada plat nama menetapkan suhu tertinggi yang boleh ditanggung belitan. Fahami had setiap kelas, kenaikan suhu dibenarkan dan pilihan bahan semasa lilitan semula.</p>
+</article>
+<article class="kad">
+<h3><a href="keselamatan-membaiki-motor.html">Keselamatan Semasa Membaiki dan Menguji Motor Elektrik</a></h3>
+<p>Elektrik, bahagian berpusing, haba dan bahan kimia semuanya hadir di bengkel motor. Ikuti lima langkah pengasingan bekalan dan amalan selamat ini sebelum memulakan sebarang kerja.</p>
+</article>
+</div>
+</section>
+<nav class="sebelum-selepas" aria-label="Artikel lain">
+<a href="penebat-alur-baji-dan-varnis.html" rel="prev"><span>Artikel sebelumnya</span>Penebat Alur, Baji dan Varnis: Bahan Penebatan Belitan</a>
+<a class="kanan" href="ujian-selepas-lilit-semula.html" rel="next"><span>Artikel seterusnya</span>Ujian Selepas Lilit Semula: Rintangan, Keseimbangan dan Arus Tanpa Beban</a>
+</nav>
+<div class="iklan" data-iklan="bawah" hidden></div>
+</article>
+
+</main>
+<footer class="kaki">
+<div class="bekas">
+<div class="kaki-grid">
+<div>
+<a class="jenama" href="index.html"><img src="logo.svg" width="36" height="36" alt=""><span>Ahmer Tech</span></a>
+<p>Kalkulator, formula dan panduan lilitan semula motor elektrik dalam bahasa Melayu.</p>
+</div>
+<nav aria-label="Halaman">
+<h2>Halaman</h2>
+<ul>
+<li><a href="index.html">Laman Utama</a></li>
+<li><a href="index.html#kalkulator">Kalkulator</a></li>
+<li><a href="index.html#artikel">Artikel</a></li>
+<li><a href="tentang.html">Tentang Kami</a></li>
+<li><a href="hubungi.html">Hubungi Kami</a></li>
+<li><a href="dasar-privasi.html">Dasar Privasi</a></li>
+<li><a href="penafian.html">Penafian</a></li>
+</ul>
+</nav>
+<nav aria-label="Topik">
+<h2>Topik</h2>
+<ul>
+<li><a href="index.html#kategori-asas-motor">Asas motor</a></li>
+<li><a href="index.html#kategori-pengiraan-belitan">Pengiraan belitan</a></li>
+<li><a href="index.html#kategori-dawai-dan-penebat">Dawai dan penebat</a></li>
+<li><a href="index.html#kategori-panduan-bengkel">Panduan bengkel</a></li>
+<li><a href="index.html#kategori-ujian-dan-diagnosis">Ujian dan diagnosis</a></li>
+<li><a href="index.html#kategori-motor-satu-fasa">Motor satu fasa</a></li>
+<li><a href="index.html#kategori-kos-dan-kecekapan">Kos dan kecekapan</a></li>
+<li><a href="index.html#kategori-rujukan">Rujukan</a></li>
+</ul>
+</nav>
+</div>
+<div class="kaki-bawah"><p>© 2026 Ahmer Tech. Hak cipta terpelihara.</p></div>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Faktor Agihan (kd) dan Faktor Belitan (kw) Motor</title>
+<meta name="description" content="Takrif dan rumus faktor agihan kd serta faktor belitan kw bagi belitan tiga fasa, jadual nilai untuk q = 1 hingga 6 dan kes belitan pecahan.">
+<meta name="keywords" content="faktor agihan, faktor belitan, winding factor, distribution factor, kd kw motor, alur per kutub per fasa">
+<meta name="author" content="Ahmer Tech">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://ahmer.tech/faktor-agihan-dan-faktor-belitan.html">
+<meta name="theme-color" content="#0f766e">
+<meta property="og:locale" content="ms_MY">
+<meta property="og:site_name" content="Ahmer Tech">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Faktor Agihan (kd) dan Faktor Belitan (kw) Motor">
+<meta property="og:description" content="Takrif dan rumus faktor agihan kd serta faktor belitan kw bagi belitan tiga fasa, jadual nilai untuk q = 1 hingga 6 dan kes belitan pecahan.">
+<meta property="og:url" content="https://ahmer.tech/faktor-agihan-dan-faktor-belitan.html">
+<meta property="og:image" content="https://ahmer.tech/kongsi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kalkulator Lilitan Semula Motor">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="ikon.png">
+<link rel="stylesheet" href="gaya.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Faktor Agihan dan Faktor Belitan Motor Tiga Fasa","description":"Takrif dan rumus faktor agihan kd serta faktor belitan kw bagi belitan tiga fasa, jadual nilai untuk q = 1 hingga 6 dan kes belitan pecahan.","inLanguage":"ms","image":["https://ahmer.tech/rajah-faktor-agihan-fasor.svg","https://ahmer.tech/kongsi.png"],"datePublished":"2026-11-11","dateModified":"2026-11-11","author":{"@type":"Organization","name":"Ahmer Tech","url":"https://ahmer.tech/"},"publisher":{"@type":"Organization","name":"Ahmer Tech","url":"https://ahmer.tech/","logo":{"@type":"ImageObject","url":"https://ahmer.tech/ikon.png"}},"mainEntityOfPage":{"@type":"WebPage","@id":"https://ahmer.tech/faktor-agihan-dan-faktor-belitan.html"},"articleSection":"Pengiraan belitan","keywords":"faktor agihan, faktor belitan, winding factor, distribution factor, kd kw motor, alur per kutub per fasa"}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Laman Utama","item":"https://ahmer.tech/"},{"@type":"ListItem","position":2,"name":"Faktor Agihan dan Faktor Belitan Motor Tiga Fasa","item":"https://ahmer.tech/faktor-agihan-dan-faktor-belitan.html"}]}</script>
+<script src="laman.js" defer></script>
+<script src="iklan.js" defer></script>
+</head>
+<body>
+<a class="langkau" href="#utama">Langkau ke kandungan</a>
+<header class="kepala">
+<div class="bekas kepala-dalam">
+<a class="jenama" href="index.html"><img src="logo.svg" width="36" height="36" alt=""><span>Ahmer Tech</span></a>
+<button class="butang-menu" type="button" aria-controls="menu-utama" aria-expanded="false" aria-label="Buka menu"><span></span><span></span><span></span></button>
+<nav class="menu" id="menu-utama" aria-label="Menu utama">
+<ul>
+<li><a href="index.html">Laman Utama</a></li>
+<li><a href="index.html#kalkulator">Kalkulator</a></li>
+<li><a href="index.html#formula">Formula</a></li>
+<li><a href="index.html#artikel">Artikel</a></li>
+<li><a href="tentang.html">Tentang Kami</a></li>
+<li><a href="hubungi.html">Hubungi</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="utama">
+
+<article class="bekas rencana">
+<nav class="serbuk" aria-label="Laluan halaman">
+<ol>
+<li><a href="index.html">Laman Utama</a></li>
+<li><a href="index.html#kategori-pengiraan-belitan">Pengiraan belitan</a></li>
+<li aria-current="page">Faktor Agihan dan Faktor Belitan Motor Tiga Fasa</li>
+</ol>
+</nav>
+<p class="cip">Pengiraan belitan</p>
+<h1>Faktor Agihan dan Faktor Belitan Motor Tiga Fasa</h1>
+<p class="meta">Dikemas kini <time datetime="2026-11-11">11 November 2026</time> · 2 minit bacaan</p>
+<div class="iklan" data-iklan="atas" hidden></div>
+<nav class="kandungan" aria-label="Isi kandungan">
+<h2>Isi kandungan</h2>
+<ol>
+<li><a href="#kuantiti-asas">Kuantiti asas</a></li>
+<li><a href="#rumus-faktor-agihan">Rumus faktor agihan</a></li>
+<li><a href="#nilai-bagi-q-yang-lazim">Nilai bagi q yang lazim</a></li>
+<li><a href="#tafsiran-geometri">Tafsiran geometri</a></li>
+<li><a href="#faktor-belitan">Faktor belitan</a></li>
+<li><a href="#belitan-pecahan">Belitan pecahan</a></li>
+<li><a href="#kepentingan-praktikal">Kepentingan praktikal</a></li>
+<li><a href="#rujukan">Rujukan dan bacaan lanjut</a></li>
+<li><a href="#artikel-berkaitan">Artikel berkaitan</a></li>
+</ol>
+</nav>
+<div class="isi">
+<p><strong>Takrif.</strong> Faktor agihan, kd, ialah nisbah jumlah vektor voltan gegelung dalam satu kumpulan fasa kepada jumlah aritmetiknya. Faktor belitan, kw, ialah hasil darab faktor pic dan faktor agihan.</p>
+<figure class="rajah">
+<a href="rajah-faktor-agihan-fasor.svg" title="Buka rajah pada saiz penuh"><img alt="Gambarajah fasor tiga voltan gegelung E1, E2 dan E3 yang berbeza fasa 20 darjah, dengan jumlah vektor lebih pendek daripada jumlah aritmetik" decoding="async" height="440" src="rajah-faktor-agihan-fasor.svg" width="760"/></a>
+<figcaption>Bagi q = 3, jumlah vektor tiga voltan gegelung ialah 2.88 E berbanding jumlah aritmetik 3 E, memberi kd = 0.960.</figcaption>
+</figure>
+<h2 id="kuantiti-asas">Kuantiti asas</h2>
+<p>Dua kuantiti diperlukan sebelum kd boleh dikira.</p>
+<ul>
+<li>Bilangan alur per kutub per fasa: q = S ÷ (3 × P).</li>
+<li>Sudut elektrik antara dua alur bersebelahan: β = 180° × P ÷ S.</li>
+</ul>
+<p>Bagi belitan tiga fasa dengan jalur fasa 60°, hasil darab q × β sentiasa 60°.</p>
+<h2 id="rumus-faktor-agihan">Rumus faktor agihan</h2>
+<p class="formula">kd = sin(q × β ÷ 2) ÷ (q × sin(β ÷ 2))</p>
+<p>Oleh sebab q × β = 60°, rumus itu boleh ditulis dalam sebutan q sahaja:</p>
+<p class="formula">kd = 0.5 ÷ (q × sin(30° ÷ q))</p>
+<h2 id="nilai-bagi-q-yang-lazim">Nilai bagi q yang lazim</h2>
+<div class="tatal"><table class="jadual-data">
+<thead>
+<tr>
+<th scope="col">q</th>
+<th scope="col">β</th>
+<th scope="col">kd</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>60°</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>2</td>
+<td>30°</td>
+<td>0.966</td>
+</tr>
+<tr>
+<td>3</td>
+<td>20°</td>
+<td>0.960</td>
+</tr>
+<tr>
+<td>4</td>
+<td>15°</td>
+<td>0.958</td>
+</tr>
+<tr>
+<td>5</td>
+<td>12°</td>
+<td>0.957</td>
+</tr>
+<tr>
+<td>6</td>
+<td>10°</td>
+<td>0.956</td>
+</tr>
+</tbody>
+</table></div>
+<p>Apabila q bertambah, kd menghampiri 3 ÷ π ≈ 0.955.</p>
+<h2 id="tafsiran-geometri">Tafsiran geometri</h2>
+<p>Rajah menunjukkan kes q = 3. Tiga voltan gegelung mempunyai magnitud E yang sama tetapi berbeza fasa 20°. Jumlah vektornya 2.88 E, manakala jumlah aritmetiknya 3 E. Nisbah kedua-duanya ialah 0.960.</p>
+<h2 id="faktor-belitan">Faktor belitan</h2>
+<p class="formula">kw = kp × kd</p>
+<p>Dua contoh:</p>
+<ol>
+<li>Belitan dua lapis 36 alur, 4 kutub, rentang 1–8. kp = 0.940 dan kd = 0.960, maka kw = 0.902.</li>
+<li>Belitan satu lapis 24 alur, 4 kutub. kp = 1 dan kd = 0.966, maka kw = 0.966.</li>
+</ol>
+<h2 id="belitan-pecahan">Belitan pecahan</h2>
+<p>Jika q bukan nombor bulat, misalnya 27 alur 6 kutub dengan q = 1.5, tulis q sebagai pecahan termudah z ÷ n dan gunakan z di tempat q dalam rumus kd. Untuk q = 3 ÷ 2, z = 3 dan kd = 0.960.</p>
+<h2 id="kepentingan-praktikal">Kepentingan praktikal</h2>
+<ol>
+<li>kw masuk terus ke dalam <a href="formula-lilitan-per-fasa.html">formula lilitan per fasa</a>. Faktor yang lebih kecil memerlukan lebih banyak lilitan untuk fluks yang sama.</li>
+<li>Agihan dan pemendekan pic mengurangkan harmonik jauh lebih banyak daripada ia mengurangkan komponen asas. Itulah sebabnya belitan teragih digunakan walaupun kw kurang daripada satu.</li>
+<li>Apabila jenis belitan ditukar semasa lilitan semula, hasil darab N × kw mesti dikekalkan supaya fluks setiap kutub tidak berubah.</li>
+</ol>
+</div>
+<aside class="ajakan">
+<p><strong>Kira belitan anda sekarang</strong>Masukkan ukuran teras dan data plat nama untuk mendapat lilitan, saiz dawai dan berat kuprum.</p>
+<a class="butang" href="index.html#kalkulator">Buka kalkulator</a>
+</aside>
+<div class="iklan" data-iklan="tengah" hidden></div>
+<section>
+<h2 id="rujukan">Rujukan dan bacaan lanjut</h2>
+<ul class="rujukan-senarai">
+<li><a href="https://en.wikipedia.org/wiki/Electric_motor" target="_blank" rel="noopener">Motor elektrik (Wikipedia)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Electromotive_force" target="_blank" rel="noopener">Daya gerak elektrik (Wikipedia)</a></li>
+<li><a href="https://www.theaemt.com/resource/revisited-the-effect-of-repairs-on-motor-efficiency.html" target="_blank" rel="noopener">Kajian kesan baik pulih terhadap kecekapan motor (AEMT)</a></li>
+</ul>
+</section>
+<section>
+<h2 id="artikel-berkaitan">Artikel berkaitan</h2>
+<div class="grid-kad">
+<article class="kad">
+<h3><a href="pic-kutub-rentang-gegelung-faktor-pic.html">Pic Kutub, Rentang Gegelung dan Faktor Pic</a></h3>
+<p>Rentang gegelung yang lebih pendek daripada pic kutub menjimatkan kuprum dan melicinkan gelombang voltan. Pelajari cara mengira pic kutub, rentang dan faktor pic dengan contoh.</p>
+</article>
+<article class="kad">
+<h3><a href="formula-lilitan-per-fasa.html">Formula Lilitan Per Fasa: E = 4.44 f Φ N kw Dijelaskan</a></h3>
+<p>Satu persamaan menghubungkan voltan, frekuensi, fluks dan bilangan lilitan. Fahami asal-usul angka 4.44 dan cara menggunakannya untuk mengira lilitan per fasa motor.</p>
+</article>
+<article class="kad">
+<h3><a href="belitan-lap-dan-sepusat.html">Belitan Lap dan Belitan Sepusat: Cara Mengenal dan Melilitnya</a></h3>
+<p>Dua bentuk gegelung paling biasa ditemui dalam stator motor aruhan ialah lap dan sepusat. Ketahui rupa, kelebihan, cara membaca rentangnya dan bila setiap satu digunakan.</p>
+</article>
+</div>
+</section>
+<nav class="sebelum-selepas" aria-label="Artikel lain">
+<a href="pic-kutub-rentang-gegelung-faktor-pic.html" rel="prev"><span>Artikel sebelumnya</span>Pic Kutub, Rentang Gegelung dan Faktor Pic</a>
+<a class="kanan" href="memilih-saiz-dawai-ketumpatan-arus.html" rel="next"><span>Artikel seterusnya</span>Memilih Saiz Dawai Belitan: Ketumpatan Arus dan Luas Keratan</a>
+</nav>
+<div class="iklan" data-iklan="bawah" hidden></div>
+</article>
+
+</main>
+<footer class="kaki">
+<div class="bekas">
+<div class="kaki-grid">
+<div>
+<a class="jenama" href="index.html"><img src="logo.svg" width="36" height="36" alt=""><span>Ahmer Tech</span></a>
+<p>Kalkulator, formula dan panduan lilitan semula motor elektrik dalam bahasa Melayu.</p>
+</div>
+<nav aria-label="Halaman">
+<h2>Halaman</h2>
+<ul>
+<li><a href="index.html">Laman Utama</a></li>
+<li><a href="index.html#kalkulator">Kalkulator</a></li>
+<li><a href="index.html#artikel">Artikel</a></li>
+<li><a href="tentang.html">Tentang Kami</a></li>
+<li><a href="hubungi.html">Hubungi Kami</a></li>
+<li><a href="dasar-privasi.html">Dasar Privasi</a></li>
+<li><a href="penafian.html">Penafian</a></li>
+</ul>
+</nav>
+<nav aria-label="Topik">
+<h2>Topik</h2>
+<ul>
+<li><a href="index.html#kategori-asas-motor">Asas motor</a></li>
+<li><a href="index.html#kategori-pengiraan-belitan">Pengiraan belitan</a></li>
+<li><a href="index.html#kategori-dawai-dan-penebat">Dawai dan penebat</a></li>
+<li><a href="index.html#kategori-panduan-bengkel">Panduan bengkel</a></li>
+<li><a href="index.html#kategori-ujian-dan-diagnosis">Ujian dan diagnosis</a></li>
+<li><a href="index.html#kategori-motor-satu-fasa">Motor satu fasa</a></li>
+<li><a href="index.html#kategori-kos-dan-kecekapan">Kos dan kecekapan</a></li>
+<li><a href="index.html#kategori-rujukan">Rujukan</a></li>
+</ul>
+</nav>
+</div>
+<div class="kaki-bawah"><p>© 2026 Ahmer Tech. Hak cipta terpelihara.</p></div>
+</div>
+</footer>
+</body>
+</html>

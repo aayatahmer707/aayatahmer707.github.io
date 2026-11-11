@@ -1,11 +1,721 @@
 <!DOCTYPE html>
-<html>
+<html lang="ms">
 <head>
-  <meta charset="UTF-8">
-  <title>Ahmer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kalkulator Lilitan Semula Motor | Ahmer Tech</title>
+<meta name="description" content="Kalkulator percuma lilitan semula motor: kira lilitan per gegelung, saiz dawai, faktor isian dan berat kuprum, dengan formula dan panduan bengkel.">
+<meta name="keywords" content="kalkulator lilitan semula motor, kalkulator rewinding motor, kira lilitan motor, saiz dawai motor, lilitan per gegelung, berat kuprum, formula lilitan motor">
+<meta name="author" content="Ahmer Tech">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://ahmer.tech/">
+<meta name="theme-color" content="#0f766e">
+<meta property="og:locale" content="ms_MY">
+<meta property="og:site_name" content="Ahmer Tech">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kalkulator Lilitan Semula Motor | Ahmer Tech">
+<meta property="og:description" content="Kalkulator percuma lilitan semula motor: kira lilitan per gegelung, saiz dawai, faktor isian dan berat kuprum, dengan formula dan panduan bengkel.">
+<meta property="og:url" content="https://ahmer.tech/">
+<meta property="og:image" content="https://ahmer.tech/kongsi.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kalkulator Lilitan Semula Motor">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="ikon.png">
+<link rel="stylesheet" href="gaya.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Ahmer Tech","alternateName":"Kalkulator Lilitan Semula Motor","url":"https://ahmer.tech/","inLanguage":"ms","description":"Kalkulator percuma lilitan semula motor: kira lilitan per gegelung, saiz dawai, faktor isian dan berat kuprum, dengan formula dan panduan bengkel.","publisher":{"@type":"Organization","name":"Ahmer Tech","url":"https://ahmer.tech/","logo":{"@type":"ImageObject","url":"https://ahmer.tech/ikon.png"}}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Kalkulator Lilitan Semula Motor","url":"https://ahmer.tech/","description":"Kalkulator percuma lilitan semula motor: kira lilitan per gegelung, saiz dawai, faktor isian dan berat kuprum, dengan formula dan panduan bengkel.","inLanguage":"ms","applicationCategory":"UtilitiesApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"MYR"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Adakah kalkulator ini menggantikan data belitan asal?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Jika belitan asal masih ada, salin bilangan lilitan, saiz dawai dan sambungannya. Gunakan kalkulator untuk menyemak sama ada data itu munasabah, atau untuk menganggar apabila data hilang."}},{"@type":"Question","name":"Mengapa keputusan berbeza daripada belitan asal motor saya?","acceptedAnswer":{"@type":"Answer","text":"Kalkulator bermula daripada andaian ketumpatan fluks 0.55 T, manakala pengilang memilih nilai sendiri mengikut bahan teras dan reka bentuk. Masukkan lilitan per gegelung asal untuk melihat ketumpatan fluks yang digunakan oleh pengilang."}},{"@type":"Question","name":"Bolehkah alat ini digunakan untuk motor satu fasa?","acceptedAnswer":{"@type":"Answer","text":"Alat belitan 3 fasa hanya untuk stator tiga fasa. Alat dawai setara serta panjang dan berat boleh digunakan untuk sebarang belitan. Untuk motor satu fasa, baca panduan belitan utama dan bantu."}},{"@type":"Question","name":"Apakah unit yang digunakan?","acceptedAnswer":{"@type":"Answer","text":"Ukuran teras dan dawai dalam milimeter, luas dalam milimeter persegi, arus dalam ampere dan voltan talian dalam volt. Titik atau koma boleh digunakan sebagai tanda perpuluhan."}}]}</script>
+<script src="laman.js" defer></script>
+<script src="kalkulator.js" defer></script>
+<script src="iklan.js" defer></script>
 </head>
 <body>
-  <h1>Assalam o Alaikum, main Ahmer hoon</h1>
-  <p>Yeh meri pehli website hai.</p>
+<a class="langkau" href="#utama">Langkau ke kandungan</a>
+<header class="kepala">
+<div class="bekas kepala-dalam">
+<a class="jenama" href="index.html"><img src="logo.svg" width="36" height="36" alt=""><span>Ahmer Tech</span></a>
+<button class="butang-menu" type="button" aria-controls="menu-utama" aria-expanded="false" aria-label="Buka menu"><span></span><span></span><span></span></button>
+<nav class="menu" id="menu-utama" aria-label="Menu utama">
+<ul>
+<li><a href="index.html">Laman Utama</a></li>
+<li><a href="index.html#kalkulator">Kalkulator</a></li>
+<li><a href="index.html#formula">Formula</a></li>
+<li><a href="index.html#artikel">Artikel</a></li>
+<li><a href="tentang.html">Tentang Kami</a></li>
+<li><a href="hubungi.html">Hubungi</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main id="utama">
+
+<section class="wira">
+<div class="bekas wira-dalam">
+<div>
+<h1>Kalkulator Lilitan Semula Motor</h1>
+<p>Kira bilangan lilitan, saiz dawai, faktor isian dan berat kuprum untuk motor aruhan tiga fasa, terus di pelayar anda. Formula dan 35 panduan bengkel disertakan.</p>
+<p class="tindakan"><a class="butang" href="#kalkulator">Mula mengira</a><a class="butang kedua" href="#artikel">Baca panduan</a></p>
+</div>
+<img class="wira-rajah" src="rajah-stator-24-alur-4-kutub.svg" width="760" height="540" alt="Stator 24 alur 4 kutub dengan alur berwarna mengikut fasa dan satu kumpulan gegelung sepusat" decoding="async">
+</div>
+</section>
+<section class="bahagian" id="kalkulator">
+<div class="bekas">
+<h2>Kalkulator</h2>
+<p class="pengenalan">Pilih alat, masukkan data plat nama dan ukuran teras, kemudian baca keputusannya. Nilai lalai ialah motor contoh 1.1 kW, 4 kutub, 24 alur.</p>
+<div class="kalkulator">
+<div class="tab" role="tablist" aria-label="Pilih alat kiraan">
+<button type="button" role="tab" id="tab-belitan" data-tab="belitan" aria-controls="panel-belitan" aria-selected="true">Belitan 3 fasa</button>
+<button type="button" role="tab" id="tab-setara" data-tab="setara" aria-controls="panel-setara" aria-selected="false" tabindex="-1">Dawai setara</button>
+<button type="button" role="tab" id="tab-tukar" data-tab="tukar" aria-controls="panel-tukar" aria-selected="false" tabindex="-1">Tukar voltan</button>
+<button type="button" role="tab" id="tab-berat" data-tab="berat" aria-controls="panel-berat" aria-selected="false" tabindex="-1">Panjang dan berat</button>
+<button type="button" role="tab" id="tab-pengubah" data-tab="pengubah" aria-controls="panel-pengubah" aria-selected="false" tabindex="-1">Pengubah</button>
+</div>
+<section role="tabpanel" id="panel-belitan" data-panel="belitan" aria-labelledby="tab-belitan">
+<p class="panel-huraian">Anggarkan lilitan per gegelung, saiz dawai, faktor isian, berat kuprum dan rintangan fasa bagi stator motor aruhan tiga fasa.</p>
+<form data-kira="belitan" data-hasil="hasil-belitan" novalidate>
+<fieldset>
+<legend>Bekalan dan plat nama</legend>
+<div class="medan-grid">
+<label class="medan">Voltan talian (V)
+<input type="text" inputmode="decimal" autocomplete="off" name="voltan" value="400">
+</label>
+<label class="medan">Frekuensi
+<select name="frekuensi" data-jenis="nombor">
+<option value="50" selected>50 Hz</option>
+<option value="60">60 Hz</option>
+</select>
+</label>
+<label class="medan">Sambungan
+<select name="sambungan">
+<option value="bintang" selected>Bintang (Y)</option>
+<option value="delta">Delta (Δ)</option>
+</select>
+</label>
+<label class="medan">Sumber arus
+<select name="sumberArus">
+<option value="plat" selected>Arus plat nama</option>
+<option value="kuasa">Kira daripada kuasa</option>
+</select>
+</label>
+<label class="medan" data-jika="sumberArus=plat">Arus talian (A)
+<input type="text" inputmode="decimal" autocomplete="off" name="arus" value="2.7">
+</label>
+<label class="medan" data-jika="sumberArus=kuasa">Kuasa keluaran (kW)
+<input type="text" inputmode="decimal" autocomplete="off" name="kuasa" value="1.1">
+</label>
+<label class="medan" data-jika="sumberArus=kuasa">Kecekapan (%)
+<input type="text" inputmode="decimal" autocomplete="off" name="kecekapan" value="78">
+</label>
+<label class="medan" data-jika="sumberArus=kuasa">Faktor kuasa
+<input type="text" inputmode="decimal" autocomplete="off" name="faktorKuasa" value="0.76">
+</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Teras stator</legend>
+<div class="medan-grid">
+<label class="medan">Bilangan alur, S
+<input type="text" inputmode="decimal" autocomplete="off" name="alur" value="24">
+</label>
+<label class="medan">Bilangan kutub, P
+<select name="kutub" data-jenis="nombor">
+<option value="2">2 kutub</option>
+<option value="4" selected>4 kutub</option>
+<option value="6">6 kutub</option>
+<option value="8">8 kutub</option>
+<option value="10">10 kutub</option>
+<option value="12">12 kutub</option>
+</select>
+</label>
+<label class="medan">Diameter dalam stator, D (mm)
+<input type="text" inputmode="decimal" autocomplete="off" name="diameter" value="80">
+</label>
+<label class="medan">Panjang teras, L (mm)
+<input type="text" inputmode="decimal" autocomplete="off" name="panjang" value="75">
+</label>
+<label class="medan">Kedalaman alur (mm)
+<small>Pilihan. Kosongkan untuk anggaran 0.16 × D.</small>
+<input type="text" inputmode="decimal" autocomplete="off" name="kedalaman" value="14">
+</label>
+<label class="medan">Luas alur (mm²)
+<small>Pilihan. Diperlukan untuk menyemak faktor isian.</small>
+<input type="text" inputmode="decimal" autocomplete="off" name="luasAlur" value="100">
+</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Belitan</legend>
+<div class="medan-grid">
+<label class="medan">Jenis lapisan
+<select name="lapisan" data-jenis="nombor">
+<option value="1" selected>Satu lapis</option>
+<option value="2">Dua lapis</option>
+</select>
+</label>
+<label class="medan">Rentang gegelung (alur)
+<small>Pilihan. Kosongkan untuk nilai automatik.</small>
+<input type="text" inputmode="decimal" autocomplete="off" name="rentang" value="">
+</label>
+<label class="medan">Laluan selari
+<input type="text" inputmode="decimal" autocomplete="off" name="laluan" value="1">
+</label>
+<label class="medan">Dawai selari (lembar)
+<input type="text" inputmode="decimal" autocomplete="off" name="lembar" value="1">
+</label>
+<label class="medan">Lilitan per gegelung asal
+<small>Pilihan. Untuk menyemak ketumpatan fluks data asal.</small>
+<input type="text" inputmode="decimal" autocomplete="off" name="lilitanAsal" value="">
+</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Andaian reka bentuk</legend>
+<div class="medan-grid">
+<label class="medan">Ketumpatan fluks purata, B (T)
+<small>Lazim 0.3 hingga 0.6 T.</small>
+<input type="text" inputmode="decimal" autocomplete="off" name="fluks" value="0.55">
+</label>
+<label class="medan">Ketumpatan arus, J (A/mm²)
+<small>Lazim 3 hingga 8 A/mm².</small>
+<input type="text" inputmode="decimal" autocomplete="off" name="ketumpatanArus" value="6">
+</label>
+<label class="medan">Sasaran faktor isian
+<small>Lazim 0.30 hingga 0.45.</small>
+<input type="text" inputmode="decimal" autocomplete="off" name="isian" value="0.40">
+</label>
+</div>
+</fieldset>
+<div class="tindakan"><button class="butang" type="submit">Kira</button><button class="butang kedua" type="reset">Set semula</button></div>
+</form>
+<div class="hasil" id="hasil-belitan" aria-live="polite"></div>
+</section>
+<section role="tabpanel" id="panel-setara" data-panel="setara" aria-labelledby="tab-setara" hidden>
+<p class="panel-huraian">Gantikan satu saiz dawai dengan beberapa dawai selari yang jumlah luas keratannya hampir sama.</p>
+<form data-kira="setara" data-hasil="hasil-setara" novalidate>
+<fieldset>
+<legend>Dawai asal</legend>
+<div class="medan-grid">
+<label class="medan">Diameter dawai asal (mm)
+<input type="text" inputmode="decimal" autocomplete="off" name="diameter" value="1.25">
+</label>
+<label class="medan">Bilangan lembar asal
+<input type="text" inputmode="decimal" autocomplete="off" name="lembar" value="1">
+</label>
+</div>
+</fieldset>
+<div class="tindakan"><button class="butang" type="submit">Kira</button><button class="butang kedua" type="reset">Set semula</button></div>
+</form>
+<div class="hasil" id="hasil-setara" aria-live="polite"></div>
+</section>
+<section role="tabpanel" id="panel-tukar" data-panel="tukar" aria-labelledby="tab-tukar" hidden>
+<p class="panel-huraian">Kira lilitan dan saiz dawai baharu apabila voltan atau frekuensi bekalan berubah.</p>
+<form data-kira="tukar" data-hasil="hasil-tukar" novalidate>
+<fieldset>
+<legend>Bekalan</legend>
+<div class="medan-grid">
+<label class="medan">Voltan asal (V)
+<input type="text" inputmode="decimal" autocomplete="off" name="voltanAsal" value="400">
+</label>
+<label class="medan">Voltan baharu (V)
+<input type="text" inputmode="decimal" autocomplete="off" name="voltanBaharu" value="230">
+</label>
+<label class="medan">Frekuensi asal (Hz)
+<input type="text" inputmode="decimal" autocomplete="off" name="frekuensiAsal" value="50">
+</label>
+<label class="medan">Frekuensi baharu (Hz)
+<input type="text" inputmode="decimal" autocomplete="off" name="frekuensiBaharu" value="50">
+</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Belitan asal</legend>
+<div class="medan-grid">
+<label class="medan">Lilitan per gegelung asal
+<input type="text" inputmode="decimal" autocomplete="off" name="lilitan" value="60">
+</label>
+<label class="medan">Diameter dawai asal (mm)
+<input type="text" inputmode="decimal" autocomplete="off" name="diameter" value="0.80">
+</label>
+<label class="medan">Dawai selari (lembar)
+<input type="text" inputmode="decimal" autocomplete="off" name="lembar" value="1">
+</label>
+</div>
+</fieldset>
+<div class="tindakan"><button class="butang" type="submit">Kira</button><button class="butang kedua" type="reset">Set semula</button></div>
+</form>
+<div class="hasil" id="hasil-tukar" aria-live="polite"></div>
+</section>
+<section role="tabpanel" id="panel-berat" data-panel="berat" aria-labelledby="tab-berat" hidden>
+<p class="panel-huraian">Anggarkan jumlah panjang dan berat dawai kuprum yang perlu dibeli sebelum kerja bermula.</p>
+<form data-kira="berat" data-hasil="hasil-berat" novalidate>
+<fieldset>
+<legend>Dawai dan gegelung</legend>
+<div class="medan-grid">
+<label class="medan">Diameter dawai (mm)
+<input type="text" inputmode="decimal" autocomplete="off" name="diameter" value="0.67">
+</label>
+<label class="medan">Dawai selari (lembar)
+<input type="text" inputmode="decimal" autocomplete="off" name="lembar" value="1">
+</label>
+<label class="medan">Lilitan per gegelung
+<input type="text" inputmode="decimal" autocomplete="off" name="lilitan" value="104">
+</label>
+<label class="medan">Bilangan gegelung
+<input type="text" inputmode="decimal" autocomplete="off" name="gegelung" value="12">
+</label>
+<label class="medan">Panjang purata satu lilitan (mm)
+<input type="text" inputmode="decimal" autocomplete="off" name="mlt" value="420">
+</label>
+<label class="medan">Lebihan untuk sisa (%)
+<input type="text" inputmode="decimal" autocomplete="off" name="lebihan" value="10">
+</label>
+</div>
+</fieldset>
+<div class="tindakan"><button class="butang" type="submit">Kira</button><button class="butang kedua" type="reset">Set semula</button></div>
+</form>
+<div class="hasil" id="hasil-berat" aria-live="polite"></div>
+</section>
+<section role="tabpanel" id="panel-pengubah" data-panel="pengubah" aria-labelledby="tab-pengubah" hidden>
+<p class="panel-huraian">Kira lilitan per volt, lilitan primer dan sekunder serta saiz dawai bagi pengubah kecil satu fasa.</p>
+<form data-kira="pengubah" data-hasil="hasil-pengubah" novalidate>
+<fieldset>
+<legend>Teras</legend>
+<div class="medan-grid">
+<label class="medan">Frekuensi
+<select name="frekuensi" data-jenis="nombor">
+<option value="50" selected>50 Hz</option>
+<option value="60">60 Hz</option>
+</select>
+</label>
+<label class="medan">Lebar lidah tengah (mm)
+<input type="text" inputmode="decimal" autocomplete="off" name="lebar" value="38">
+</label>
+<label class="medan">Tebal tindanan (mm)
+<input type="text" inputmode="decimal" autocomplete="off" name="tindanan" value="37">
+</label>
+<label class="medan">Faktor tindanan
+<input type="text" inputmode="decimal" autocomplete="off" name="faktorTindanan" value="0.9">
+</label>
+<label class="medan">Ketumpatan fluks (T)
+<small>Lazim 1.0 hingga 1.2 T bagi laminasi biasa.</small>
+<input type="text" inputmode="decimal" autocomplete="off" name="fluks" value="1.0">
+</label>
+</div>
+</fieldset>
+<fieldset>
+<legend>Belitan</legend>
+<div class="medan-grid">
+<label class="medan">Voltan primer (V)
+<input type="text" inputmode="decimal" autocomplete="off" name="voltanPrimer" value="230">
+</label>
+<label class="medan">Voltan sekunder (V)
+<input type="text" inputmode="decimal" autocomplete="off" name="voltanSekunder" value="12">
+</label>
+<label class="medan">Kuasa (VA)
+<input type="text" inputmode="decimal" autocomplete="off" name="kuasa" value="100">
+</label>
+<label class="medan">Ketumpatan arus (A/mm²)
+<input type="text" inputmode="decimal" autocomplete="off" name="ketumpatanArus" value="3">
+</label>
+<label class="medan">Kecekapan (%)
+<input type="text" inputmode="decimal" autocomplete="off" name="kecekapan" value="90">
+</label>
+<label class="medan">Pampasan lilitan sekunder (%)
+<input type="text" inputmode="decimal" autocomplete="off" name="pampasan" value="5">
+</label>
+</div>
+</fieldset>
+<div class="tindakan"><button class="butang" type="submit">Kira</button><button class="butang kedua" type="reset">Set semula</button></div>
+</form>
+<div class="hasil" id="hasil-pengubah" aria-live="polite"></div>
+</section>
+</div>
+<p class="pengenalan">Keputusan ialah anggaran reka bentuk. Jika belitan asal masih ada, salin data asal dan gunakan kalkulator sebagai semakan. Baca <a href="penafian.html">penafian</a>.</p>
+</div>
+</section>
+<div class="bekas"><div class="iklan" data-iklan="atas" hidden></div></div>
+<section class="bahagian" id="cara-guna">
+<div class="bekas">
+<h2>Cara menggunakan kalkulator</h2>
+<div class="dua-lajur">
+<div>
+<ol class="langkah-senarai">
+<li>Salin voltan, frekuensi, sambungan dan arus daripada <a href="cara-membaca-plat-nama-motor.html">plat nama motor</a>.</li>
+<li>Kira bilangan alur, kemudian ukur diameter dalam dan panjang teras mengikut <a href="cara-mengukur-teras-stator.html">panduan mengukur teras</a>.</li>
+<li>Isi kedalaman alur dan luas alur supaya kalkulator dapat menyemak <a href="faktor-isian-alur.html">faktor isian</a>.</li>
+<li>Pilih satu lapis atau dua lapis mengikut <a href="belitan-satu-lapis-dan-dua-lapis.html">belitan asal</a>.</li>
+<li>Baca lilitan per gegelung dan saiz dawai, kemudian teliti setiap amaran yang dipaparkan.</li>
+<li>Bandingkan dengan data asal jika ada. Ikuti <a href="contoh-pengiraan-motor-1-1-kw.html">contoh kiraan penuh</a> untuk melihat setiap langkah.</li>
+</ol>
+<h3>Julat lazim</h3>
+<div class="tatal">
+<table class="jadual-data">
+<thead><tr><th scope="col">Nilai</th><th scope="col">Julat lazim</th><th scope="col">Amaran dipaparkan apabila</th></tr></thead>
+<tbody>
+<tr><td>Ketumpatan fluks purata</td><td>0.3 hingga 0.6 T</td><td>di bawah 0.30 T atau melebihi 0.65 T</td></tr>
+<tr><td>Ketumpatan arus</td><td>3 hingga 8 A/mm²</td><td>melebihi 8 A/mm²</td></tr>
+<tr><td>Faktor isian alur</td><td>0.30 hingga 0.45</td><td>melebihi 0.45</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+<figure class="rajah">
+<img src="rajah-ukuran-teras-stator.svg" width="760" height="430" alt="Pandangan hadapan stator dengan diameter dalam D dan kedalaman alur, serta pandangan sisi dengan panjang teras L" loading="lazy" decoding="async">
+<figcaption>Ukuran teras yang diperlukan: bilangan alur, diameter dalam, kedalaman alur dan panjang teras.</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<section class="bahagian" id="formula">
+<div class="bekas">
+<h2>Formula yang digunakan</h2>
+<p class="pengenalan">Kalkulator mengikut langkah yang sama seperti kiraan tangan. Setiap formula di bawah dihuraikan dalam artikel berkaitan.</p>
+<div class="senarai-formula">
+<div class="kad-formula">
+<h3>Lilitan per fasa</h3>
+<p class="formula">N = E ÷ (4.44 × f × Φ × kw)</p>
+<p>E ialah voltan fasa dan Φ ialah fluks setiap kutub. <a href="formula-lilitan-per-fasa.html">Formula lilitan per fasa</a></p>
+</div>
+<div class="kad-formula">
+<h3>Fluks setiap kutub</h3>
+<p class="formula">Φ = B × (π × D ÷ P) × L</p>
+<p>B ialah ketumpatan fluks purata. Kalkulator menukar D dan L daripada milimeter kepada meter. <a href="contoh-pengiraan-motor-1-1-kw.html">Contoh kiraan penuh</a></p>
+</div>
+<div class="kad-formula">
+<h3>Laju segerak</h3>
+<p class="formula">Ns = 120 × f ÷ P</p>
+<p>Laju medan magnet berpusing dalam pusingan seminit. <a href="laju-segerak-kutub-dan-gelincir.html">Laju segerak dan gelincir</a></p>
+</div>
+<div class="kad-formula">
+<h3>Faktor pic</h3>
+<p class="formula">kp = sin(rentang ÷ pic kutub × 90°)</p>
+<p>Bagi belitan satu lapis, kalkulator menggunakan kp = 1. <a href="pic-kutub-rentang-gegelung-faktor-pic.html">Pic kutub dan rentang gegelung</a></p>
+</div>
+<div class="kad-formula">
+<h3>Faktor agihan dan faktor belitan</h3>
+<p class="formula">kd = 0.5 ÷ (q × sin(30° ÷ q))</p>
+<p class="formula">kw = kp × kd</p>
+<p>q ialah bilangan alur per kutub per fasa. <a href="faktor-agihan-dan-faktor-belitan.html">Faktor agihan dan faktor belitan</a></p>
+</div>
+<div class="kad-formula">
+<h3>Konduktor per alur</h3>
+<p class="formula">Konduktor per alur = 6 × N × a ÷ S</p>
+<p>a ialah bilangan laluan selari. Hasilnya dibundarkan kepada nombor bulat. <a href="belitan-satu-lapis-dan-dua-lapis.html">Belitan satu lapis dan dua lapis</a></p>
+</div>
+<div class="kad-formula">
+<h3>Saiz dawai</h3>
+<p class="formula">A = I ÷ J</p>
+<p class="formula">d = √(4 × A ÷ π)</p>
+<p>I ialah arus setiap laluan dan J ialah ketumpatan arus. <a href="memilih-saiz-dawai-ketumpatan-arus.html">Memilih saiz dawai</a></p>
+</div>
+<div class="kad-formula">
+<h3>Faktor isian alur</h3>
+<p class="formula">Faktor isian = (bilangan konduktor × luas kuprum satu dawai) ÷ luas alur</p>
+<p>Menentukan sama ada gegelung muat di dalam alur. <a href="faktor-isian-alur.html">Faktor isian alur</a></p>
+</div>
+<div class="kad-formula">
+<h3>Panjang dan berat dawai</h3>
+<p class="formula">Panjang purata satu lilitan ≈ 2L + 4e + π × w</p>
+<p class="formula">Berat (kg) = panjang (m) × luas (mm²) × 8.9 ÷ 1000</p>
+<p>e ialah unjuran lurus 10 mm dan w ialah lebar gegelung. <a href="panjang-dan-berat-dawai-kuprum.html">Panjang dan berat dawai kuprum</a></p>
+</div>
+<div class="kad-formula">
+<h3>Rintangan belitan</h3>
+<p class="formula">R = 0.01724 × panjang (m) ÷ luas (mm²)</p>
+<p>Rintangan kuprum pada 20 °C, untuk dibandingkan dengan bacaan meter. <a href="ujian-selepas-lilit-semula.html">Ujian selepas lilit semula</a></p>
+</div>
+<div class="kad-formula">
+<h3>Tukar voltan dan frekuensi</h3>
+<p class="formula">N baharu = N asal × (V baharu ÷ V asal) × (f asal ÷ f baharu)</p>
+<p class="formula">A baharu = A asal × (N asal ÷ N baharu)</p>
+<p>Mengekalkan fluks teras dan isian alur. <a href="menukar-voltan-motor.html">Menukar voltan motor</a></p>
+</div>
+<div class="kad-formula">
+<h3>Dawai setara</h3>
+<p class="formula">d setiap lembar = d asal ÷ √n</p>
+<p>n dawai selari memberi jumlah luas keratan yang sama. <a href="dawai-selari-ganti-saiz.html">Dawai selari</a></p>
+</div>
+<div class="kad-formula">
+<h3>Pengubah</h3>
+<p class="formula">Lilitan per volt = 1 ÷ (4.44 × f × B × A)</p>
+<p>A ialah luas bersih teras dalam meter persegi. <a href="lilitan-pengubah-kecil.html">Lilitan pengubah kecil</a></p>
+</div>
+</div>
+<div class="dua-lajur">
+<figure class="rajah">
+<img src="rajah-formula-lilitan-per-fasa.svg" width="760" height="400" alt="Formula lilitan per fasa dengan setiap simbol dilabel: voltan fasa, frekuensi, fluks setiap kutub dan faktor belitan" loading="lazy" decoding="async">
+<figcaption>Formula lilitan per fasa dan maksud setiap simbol.</figcaption>
+</figure>
+<div>
+<h3>Simbol</h3>
+<div class="tatal">
+<table class="jadual-data">
+<thead><tr><th scope="col">Simbol</th><th scope="col">Maksud</th><th scope="col">Unit</th></tr></thead>
+<tbody>
+<tr><td>N</td><td>Lilitan bersiri setiap fasa</td><td>lilitan</td></tr>
+<tr><td>E</td><td>Voltan fasa</td><td>V</td></tr>
+<tr><td>f</td><td>Frekuensi bekalan</td><td>Hz</td></tr>
+<tr><td>Φ</td><td>Fluks setiap kutub</td><td>Wb</td></tr>
+<tr><td>B</td><td>Ketumpatan fluks purata di sela udara</td><td>T</td></tr>
+<tr><td>D</td><td>Diameter dalam stator</td><td>mm</td></tr>
+<tr><td>L</td><td>Panjang teras</td><td>mm</td></tr>
+<tr><td>P</td><td>Bilangan kutub</td><td>–</td></tr>
+<tr><td>S</td><td>Bilangan alur</td><td>–</td></tr>
+<tr><td>q</td><td>Alur per kutub per fasa</td><td>–</td></tr>
+<tr><td>kp, kd, kw</td><td>Faktor pic, faktor agihan dan faktor belitan</td><td>–</td></tr>
+<tr><td>I</td><td>Arus setiap laluan</td><td>A</td></tr>
+<tr><td>J</td><td>Ketumpatan arus</td><td>A/mm²</td></tr>
+<tr><td>A</td><td>Luas keratan kuprum</td><td>mm²</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="bekas"><div class="iklan" data-iklan="tengah" hidden></div></div>
+<section class="bahagian" id="artikel">
+<div class="bekas">
+<h2>Artikel dan panduan</h2>
+<p class="pengenalan">35 artikel tentang lilitan semula motor, disusun mengikut topik.</p>
+<ul class="pandu">
+<li><a href="#kategori-asas-motor">Asas motor</a></li>
+<li><a href="#kategori-pengiraan-belitan">Pengiraan belitan</a></li>
+<li><a href="#kategori-dawai-dan-penebat">Dawai dan penebat</a></li>
+<li><a href="#kategori-panduan-bengkel">Panduan bengkel</a></li>
+<li><a href="#kategori-ujian-dan-diagnosis">Ujian dan diagnosis</a></li>
+<li><a href="#kategori-motor-satu-fasa">Motor satu fasa</a></li>
+<li><a href="#kategori-kos-dan-kecekapan">Kos dan kecekapan</a></li>
+<li><a href="#kategori-rujukan">Rujukan</a></li>
+</ul>
+<h3 class="kategori-tajuk" id="kategori-asas-motor">Asas motor</h3>
+<div class="grid-kad">
+<article class="kad">
+<h4><a href="apa-itu-lilitan-semula-motor.html">Apa Itu Lilitan Semula Motor dan Bila Ia Diperlukan</a></h4>
+<p>Lilitan semula menggantikan belitan kuprum yang rosak supaya motor berfungsi seperti asal. Kenali bahagian motor, tanda kerosakan belitan dan proses asasnya di sini.</p>
+</article>
+<article class="kad">
+<h4><a href="cara-membaca-plat-nama-motor.html">Cara Membaca Plat Nama Motor Elektrik</a></h4>
+<p>Plat nama memberi semua data yang diperlukan sebelum melilit semula: voltan, arus, laju, sambungan dan kelas penebat. Ketahui maksud setiap ruangan satu per satu.</p>
+</article>
+<article class="kad">
+<h4><a href="laju-segerak-kutub-dan-gelincir.html">Laju Segerak, Bilangan Kutub dan Gelincir Motor</a></h4>
+<p>Mengapa motor 4 kutub berpusing hampir 1500 pusingan seminit? Jawapannya terletak pada frekuensi bekalan dan bilangan kutub. Lihat formula, jadual laju dan maksud gelincir.</p>
+</article>
+<article class="kad">
+<h4><a href="sambungan-bintang-dan-delta.html">Sambungan Bintang dan Delta: Voltan, Arus dan Kesan pada Belitan</a></h4>
+<p>Belitan yang sama boleh bekerja pada dua voltan bergantung pada sambungan bintang atau delta. Fahami hubungan voltan dan arus fasa serta kesannya pada pengiraan lilitan.</p>
+</article>
+</div>
+<h3 class="kategori-tajuk" id="kategori-pengiraan-belitan">Pengiraan belitan</h3>
+<div class="grid-kad">
+<article class="kad">
+<h4><a href="formula-lilitan-per-fasa.html">Formula Lilitan Per Fasa: E = 4.44 f Φ N kw Dijelaskan</a></h4>
+<p>Satu persamaan menghubungkan voltan, frekuensi, fluks dan bilangan lilitan. Fahami asal-usul angka 4.44 dan cara menggunakannya untuk mengira lilitan per fasa motor.</p>
+</article>
+<article class="kad">
+<h4><a href="pic-kutub-rentang-gegelung-faktor-pic.html">Pic Kutub, Rentang Gegelung dan Faktor Pic</a></h4>
+<p>Rentang gegelung yang lebih pendek daripada pic kutub menjimatkan kuprum dan melicinkan gelombang voltan. Pelajari cara mengira pic kutub, rentang dan faktor pic dengan contoh.</p>
+</article>
+<article class="kad">
+<h4><a href="faktor-agihan-dan-faktor-belitan.html">Faktor Agihan dan Faktor Belitan Motor Tiga Fasa</a></h4>
+<p>Gegelung yang diagih dalam beberapa alur menghasilkan voltan yang sedikit berbeza fasa. Faktor agihan mengukur kesannya, dan bersama faktor pic ia membentuk faktor belitan.</p>
+</article>
+<article class="kad">
+<h4><a href="contoh-pengiraan-motor-1-1-kw.html">Contoh Pengiraan Penuh: Motor 1.1 kW, 4 Kutub, 24 Alur</a></h4>
+<p>Ikuti pengiraan lengkap belitan motor 1.1 kW daripada ukuran teras hingga bilangan lilitan, saiz dawai, faktor isian dan berat kuprum, sama seperti keputusan kalkulator.</p>
+</article>
+<article class="kad">
+<h4><a href="menukar-voltan-motor.html">Menukar Voltan Motor: Kira Lilitan dan Saiz Dawai Baharu</a></h4>
+<p>Sebelum melilit semula untuk voltan lain, semak sama ada sambungan semula sudah memadai. Jika tidak, dua nisbah mudah memberi bilangan lilitan dan saiz dawai baharu.</p>
+</article>
+<article class="kad">
+<h4><a href="lilitan-pengubah-kecil.html">Lilitan Pengubah Kecil: Mengira Lilitan Per Volt dan Saiz Dawai</a></h4>
+<p>Formula yang sama dengan motor memberi lilitan per volt pengubah. Daripada luas teras, kira lilitan primer dan sekunder, arus serta saiz dawai melalui contoh lengkap.</p>
+</article>
+<article class="kad">
+<h4><a href="voltan-frekuensi-50hz-60hz.html">Motor 60 Hz pada Bekalan 50 Hz: Kesan Voltan dan Frekuensi</a></h4>
+<p>Motor import 60 Hz tidak semestinya sesuai dengan bekalan 50 Hz. Nisbah voltan kepada frekuensi menentukan sama ada teras tepu, dan bila lilitan semula diperlukan.</p>
+</article>
+</div>
+<h3 class="kategori-tajuk" id="kategori-dawai-dan-penebat">Dawai dan penebat</h3>
+<div class="grid-kad">
+<article class="kad">
+<h4><a href="memilih-saiz-dawai-ketumpatan-arus.html">Memilih Saiz Dawai Belitan: Ketumpatan Arus dan Luas Keratan</a></h4>
+<p>Dawai terlalu halus cepat panas, dawai terlalu tebal tidak muat dalam alur. Ketumpatan arus membantu memilih luas keratan kuprum yang seimbang untuk setiap motor.</p>
+</article>
+<article class="kad">
+<h4><a href="jadual-saiz-dawai-swg-awg-mm.html">Jadual Saiz Dawai SWG, AWG dan Milimeter untuk Lilitan Motor</a></h4>
+<p>Jadual rujukan pantas menukar nombor tolok SWG dan AWG kepada diameter milimeter, luas keratan dan saiz metrik terdekat bagi dawai kuprum berenamel untuk lilitan motor.</p>
+</article>
+<article class="kad">
+<h4><a href="faktor-isian-alur.html">Faktor Isian Alur: Berapa Banyak Dawai Boleh Masuk</a></h4>
+<p>Pengiraan memberi bilangan lilitan dan saiz dawai, tetapi alur yang menentukan sama ada semuanya muat. Faktor isian ialah semakan terakhir sebelum mula melilit gegelung.</p>
+</article>
+<article class="kad">
+<h4><a href="dawai-selari-ganti-saiz.html">Menggunakan Dawai Selari Sebagai Ganti Saiz yang Tiada</a></h4>
+<p>Saiz dawai yang diperlukan tiada di kedai? Dua atau tiga dawai halus selari boleh menggantikannya asalkan jumlah luas keratan kekal. Lihat formula dan jadual gabungan.</p>
+</article>
+<article class="kad">
+<h4><a href="panjang-dan-berat-dawai-kuprum.html">Mengira Panjang dan Berat Dawai Kuprum untuk Lilitan Semula</a></h4>
+<p>Dawai kuprum dijual mengikut berat, bukan panjang. Kira panjang purata satu lilitan, jumlah panjang dan berat yang perlu dibeli supaya tidak terkurang di tengah kerja.</p>
+</article>
+<article class="kad">
+<h4><a href="kelas-penebat-motor.html">Kelas Penebat Motor A, E, B, F dan H Dijelaskan</a></h4>
+<p>Kelas penebat pada plat nama menetapkan suhu tertinggi yang boleh ditanggung belitan. Fahami had setiap kelas, kenaikan suhu dibenarkan dan pilihan bahan semasa lilitan semula.</p>
+</article>
+<article class="kad">
+<h4><a href="penebat-alur-baji-dan-varnis.html">Penebat Alur, Baji dan Varnis: Bahan Penebatan Belitan</a></h4>
+<p>Dawai kuprum hanya separuh cerita. Pelapik alur, pemisah fasa, baji, sarung dan varnis melindungi belitan daripada litar pintas, getaran serta lembapan sepanjang hayat motor.</p>
+</article>
+</div>
+<h3 class="kategori-tajuk" id="kategori-panduan-bengkel">Panduan bengkel</h3>
+<div class="grid-kad">
+<article class="kad">
+<h4><a href="belitan-satu-lapis-dan-dua-lapis.html">Belitan Satu Lapis dan Dua Lapis: Perbezaan dan Pilihan</a></h4>
+<p>Belitan satu lapis mudah dimasukkan, belitan dua lapis memberi gelombang medan yang lebih licin. Bandingkan bilangan gegelung, penebat, kegunaan dan kesannya terhadap lilitan semula.</p>
+</article>
+<article class="kad">
+<h4><a href="belitan-lap-dan-sepusat.html">Belitan Lap dan Belitan Sepusat: Cara Mengenal dan Melilitnya</a></h4>
+<p>Dua bentuk gegelung paling biasa ditemui dalam stator motor aruhan ialah lap dan sepusat. Ketahui rupa, kelebihan, cara membaca rentangnya dan bila setiap satu digunakan.</p>
+</article>
+<article class="kad">
+<h4><a href="merekod-data-belitan.html">Cara Merekod Data Belitan Sebelum Membuka Motor</a></h4>
+<p>Lima minit mencatat data sebelum memotong belitan lama menjimatkan berjam-jam meneka kemudian. Gunakan senarai semak ini untuk plat nama, teras, gegelung, dawai dan sambungan.</p>
+</article>
+<article class="kad">
+<h4><a href="langkah-melilit-semula-motor-tiga-fasa.html">Langkah Demi Langkah Melilit Semula Motor Tiga Fasa</a></h4>
+<p>Daripada menanggalkan belitan lama hingga ujian akhir, ikuti sepuluh langkah melilit semula stator motor tiga fasa dengan kemas, selamat dan mengikut amalan baik bengkel.</p>
+</article>
+<article class="kad">
+<h4><a href="alat-dan-bahan-bengkel-lilitan.html">Alat dan Bahan Bengkel Lilitan Semula Motor</a></h4>
+<p>Senarai alat ukur, alat melilit, bahan penebat dan peralatan ujian yang diperlukan untuk memulakan kerja lilitan semula motor, daripada mikrometer hingga penguji penebatan dan ketuhar.</p>
+</article>
+<article class="kad">
+<h4><a href="keselamatan-membaiki-motor.html">Keselamatan Semasa Membaiki dan Menguji Motor Elektrik</a></h4>
+<p>Elektrik, bahagian berpusing, haba dan bahan kimia semuanya hadir di bengkel motor. Ikuti lima langkah pengasingan bekalan dan amalan selamat ini sebelum memulakan sebarang kerja.</p>
+</article>
+<article class="kad">
+<h4><a href="cara-mengukur-teras-stator.html">Cara Mengukur Teras Stator dan Mengisi Kalkulator</a></h4>
+<p>Kalkulator hanya setepat ukuran yang dimasukkan. Pelajari cara mengukur diameter dalam, panjang teras, kedalaman alur dan bilangan alur dengan betul sebelum mula mengira.</p>
+</article>
+</div>
+<h3 class="kategori-tajuk" id="kategori-ujian-dan-diagnosis">Ujian dan diagnosis</h3>
+<div class="grid-kad">
+<article class="kad">
+<h4><a href="ujian-megger-rintangan-penebatan.html">Ujian Megger: Cara Mengukur Rintangan Penebatan Motor</a></h4>
+<p>Ujian rintangan penebatan mendedahkan belitan lembap, kotor atau rosak sebelum motor dihidupkan. Ikuti prosedur, voltan ujian dan nilai minimum yang disyorkan piawaian IEEE 43.</p>
+</article>
+<article class="kad">
+<h4><a href="ujian-selepas-lilit-semula.html">Ujian Selepas Lilit Semula: Rintangan, Keseimbangan dan Arus Tanpa Beban</a></h4>
+<p>Motor yang baru dililit semula mesti lulus beberapa ujian sebelum diserahkan. Ikuti urutan daripada pemeriksaan visual hingga arus tanpa beban dan ketahui maksud setiap bacaan.</p>
+</article>
+<article class="kad">
+<h4><a href="punca-belitan-motor-terbakar.html">Mengapa Belitan Motor Terbakar: Lapan Punca dan Cara Mengenalnya</a></h4>
+<p>Belitan yang hangus menyimpan petunjuk tentang puncanya. Baca corak kerosakan untuk membezakan beban lampau, hilang fasa dan litar pintas supaya motor tidak terbakar semula.</p>
+</article>
+</div>
+<h3 class="kategori-tajuk" id="kategori-motor-satu-fasa">Motor satu fasa</h3>
+<div class="grid-kad">
+<article class="kad">
+<h4><a href="motor-satu-fasa-belitan-utama-dan-bantu.html">Motor Satu Fasa: Belitan Utama dan Belitan Bantu</a></h4>
+<p>Motor satu fasa memerlukan dua belitan untuk mula berpusing. Fahami peranan belitan utama, belitan bantu, kapasitor dan suis emparan sebelum melilit semula motor jenis ini.</p>
+</article>
+<article class="kad">
+<h4><a href="kapasitor-mula-dan-kapasitor-jalan.html">Kapasitor Mula dan Kapasitor Jalan: Perbezaan, Nilai dan Cara Menguji</a></h4>
+<p>Kapasitor mula memberi tork permulaan, kapasitor jalan kekal bekerja sepanjang masa. Ketahui perbezaan binaan, kadaran, tanda kerosakan dan cara menggantinya dengan selamat.</p>
+</article>
+<article class="kad">
+<h4><a href="melilit-semula-kipas-siling.html">Melilit Semula Kipas Siling: Panduan untuk Pemula</a></h4>
+<p>Kipas siling ialah projek lilitan semula pertama yang popular. Fahami binaan stator dalamnya, belitan utama dan bantu, kapasitor serta langkah kerja sebelum membuka kipas anda.</p>
+</article>
+</div>
+<h3 class="kategori-tajuk" id="kategori-kos-dan-kecekapan">Kos dan kecekapan</h3>
+<div class="grid-kad">
+<article class="kad">
+<h4><a href="lilit-semula-atau-ganti-baharu.html">Lilit Semula atau Ganti Baharu? Cara Membuat Keputusan</a></h4>
+<p>Kos baik pulih hanya sebahagian daripada kiraan. Bandingkan harga, keadaan teras, kecekapan dan kos elektrik sepanjang hayat untuk memutuskan sama ada motor patut dililit semula.</p>
+</article>
+<article class="kad">
+<h4><a href="mitos-kecekapan-motor-lilit-semula.html">Adakah Lilit Semula Mengurangkan Kecekapan Motor? Mitos dan Fakta</a></h4>
+<p>Ramai percaya setiap lilitan semula membuang beberapa peratus kecekapan. Kajian bebas menunjukkan sebaliknya apabila amalan baik diikuti. Lihat lima mitos dan fakta di sebaliknya.</p>
+</article>
+</div>
+<h3 class="kategori-tajuk" id="kategori-rujukan">Rujukan</h3>
+<div class="grid-kad">
+<article class="kad">
+<h4><a href="glosari-istilah-lilitan-motor.html">Glosari Istilah Lilitan Motor: Bahasa Melayu dan Inggeris</a></h4>
+<p>Rujukan pantas istilah lilitan motor dalam bahasa Melayu dengan padanan Inggeris dan maksud ringkas, daripada alur, gegelung dan pic kutub hingga faktor belitan dan varnis.</p>
+</article>
+<article class="kad">
+<h4><a href="soal-jawab-lilitan-semula-motor.html">Soal Jawab Lazim Tentang Lilitan Semula Motor</a></h4>
+<p>Jawapan ringkas kepada soalan yang paling kerap ditanya tentang lilitan semula motor: data hilang, saiz dawai, bilangan lilitan, varnis, ujian dan kos.</p>
+</article>
+</div>
+</div>
+</section>
+<section class="bahagian" id="soalan-lazim">
+<div class="bekas">
+<h2>Soalan lazim</h2>
+<div class="soalan">
+<h3>Adakah kalkulator ini menggantikan data belitan asal?</h3>
+<p>Tidak. Jika belitan asal masih ada, salin bilangan lilitan, saiz dawai dan sambungannya. Gunakan kalkulator untuk menyemak sama ada data itu munasabah, atau untuk menganggar apabila data hilang.</p>
+</div>
+<div class="soalan">
+<h3>Mengapa keputusan berbeza daripada belitan asal motor saya?</h3>
+<p>Kalkulator bermula daripada andaian ketumpatan fluks 0.55 T, manakala pengilang memilih nilai sendiri mengikut bahan teras dan reka bentuk. Masukkan lilitan per gegelung asal untuk melihat ketumpatan fluks yang digunakan oleh pengilang.</p>
+</div>
+<div class="soalan">
+<h3>Bolehkah alat ini digunakan untuk motor satu fasa?</h3>
+<p>Alat belitan 3 fasa hanya untuk stator tiga fasa. Alat dawai setara serta panjang dan berat boleh digunakan untuk sebarang belitan. Untuk motor satu fasa, baca <a href="motor-satu-fasa-belitan-utama-dan-bantu.html">panduan belitan utama dan bantu</a>.</p>
+</div>
+<div class="soalan">
+<h3>Apakah unit yang digunakan?</h3>
+<p>Ukuran teras dan dawai dalam milimeter, luas dalam milimeter persegi, arus dalam ampere dan voltan talian dalam volt. Titik atau koma boleh digunakan sebagai tanda perpuluhan.</p>
+</div>
+</div>
+</section>
+<div class="bekas"><div class="iklan" data-iklan="bawah" hidden></div></div>
+
+</main>
+<footer class="kaki">
+<div class="bekas">
+<div class="kaki-grid">
+<div>
+<a class="jenama" href="index.html"><img src="logo.svg" width="36" height="36" alt=""><span>Ahmer Tech</span></a>
+<p>Kalkulator, formula dan panduan lilitan semula motor elektrik dalam bahasa Melayu.</p>
+</div>
+<nav aria-label="Halaman">
+<h2>Halaman</h2>
+<ul>
+<li><a href="index.html">Laman Utama</a></li>
+<li><a href="index.html#kalkulator">Kalkulator</a></li>
+<li><a href="index.html#artikel">Artikel</a></li>
+<li><a href="tentang.html">Tentang Kami</a></li>
+<li><a href="hubungi.html">Hubungi Kami</a></li>
+<li><a href="dasar-privasi.html">Dasar Privasi</a></li>
+<li><a href="penafian.html">Penafian</a></li>
+</ul>
+</nav>
+<nav aria-label="Topik">
+<h2>Topik</h2>
+<ul>
+<li><a href="index.html#kategori-asas-motor">Asas motor</a></li>
+<li><a href="index.html#kategori-pengiraan-belitan">Pengiraan belitan</a></li>
+<li><a href="index.html#kategori-dawai-dan-penebat">Dawai dan penebat</a></li>
+<li><a href="index.html#kategori-panduan-bengkel">Panduan bengkel</a></li>
+<li><a href="index.html#kategori-ujian-dan-diagnosis">Ujian dan diagnosis</a></li>
+<li><a href="index.html#kategori-motor-satu-fasa">Motor satu fasa</a></li>
+<li><a href="index.html#kategori-kos-dan-kecekapan">Kos dan kecekapan</a></li>
+<li><a href="index.html#kategori-rujukan">Rujukan</a></li>
+</ul>
+</nav>
+</div>
+<div class="kaki-bawah"><p>© 2026 Ahmer Tech. Hak cipta terpelihara.</p></div>
+</div>
+</footer>
 </body>
 </html>
